@@ -1,0 +1,40 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<title> Generate a n-digit number using JavaScript </title> 
+<style> 
+body { 
+       text-align: center; 
+	   } 
+	 h1 { 
+          color: green; 
+		  } 
+
+        #a{ 
+		color: green;  
+		font-size: 29px; 
+		font-weight: bold
+		} 
+		</style> 
+		</head>
+		<body style="text-align:center;"> 
+		<h1 style="color:green;">  
+		RANDOM NUMBER 
+		</h1> 
+		<p> 
+		Click on the button to generate random 6 digit number 
+		</p> 
+		<button onclick="rand();"> 
+		click here 
+		</button> 
+		<p id="a"> 
+		</p> 
+		<script>
+		
+		var down = document.getElementById('a'); 
+		function rand() { 
+		down.innerHTML = ("" + Math.random()).substring(2, 8); 
+		} 
+		</script> 
+		</body> 
+		</html>
