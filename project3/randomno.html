@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+        Generate a n-digit number using JavaScript
+    </title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            color: green;
+        }
+        #minval {
+            color: green; 
+            font-size: 29px;
+            font-weight: bold;
+        }
+		 #min {
+            color: green; 
+            font-size: 29px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+  
+<body>
+
+    <h1>  
+      5-digit and 6-digit random number  
+    </h1>
+    <p>
+          
+      <!-- min and max are 5 digit so-->        
+      Click on the button to generate random 
+      5 digit number
+    </p>
+    <button onclick="randomnumber();">
+        click here
+    </button>
+    <p id="minval">
+    </p>
+    <script>
+        var up = document.getElementById('maxval');
+        var down = document.getElementById('minval');
+  
+        function randomnumber() {
+            var minm = 10000;
+            var maxm = 99999;
+            down.innerHTML = Math.floor(Math
+            .random() * (maxm - minm + 1)) + minm;
+        }
+    </script>
+	
+	
+	  <p>
+          
+      <!-- min and max are 5 digit so-->        
+      Click on the button to generate random 
+      6 digit number
+    </p>
+    <button onclick="randomno();">
+        click here
+    </button>
+    <p id="min">
+    </p>
+    <script>
+        var up = document.getElementById('max');
+        var down = document.getElementById('min');
+  
+        function randomno() {
+            var minm = 100000;
+            var maxm = 999999;
+            down.innerHTML = Math.floor(Math
+            .random() * (maxm - minm + 1)) + minm;
+        }
+    </script>
+	
+</body>
+  
+</html>
