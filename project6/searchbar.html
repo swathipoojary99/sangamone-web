@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{
+box-sizing:border-box;
+}
+
+#myInput {
+  
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+<h2>Countries</h2>
+<input type="text" id="myInput" onkeyup="myFunction()"
+ placeholder="Search for country names..." title="Type in country name">
+   <ul id="myUL">
+    <li><a href="#">Afghanistan</a></li>
+   <li><a href="#">Albania</a></li>
+    <li><a href="#">Angola</a></li>
+	 <li><a href="#">Australia</a></li>
+	  <li><a href="#">Bahrain</a></li>
+	   <li><a href="#">Bangladesh</a></li>
+	    <li><a href="#">Belgium</a></li>
+		 <li><a href="#">Bhutan</a></li>
+		  <li><a href="#">Botswana</a></li> 
+		  <li><a href="#">Brazil</a></li>
+		   <li><a href="#">Canada</a></li>
+		    <li><a href="#">Cambodia</a></li>
+			 <li><a href="#">Chile</a></li> 
+			 <li><a href="#">Denmark</a></li> 
+			 <li><a href="#">Dominica</a></li> 
+			 <li><a href="#">Egypt</a></li> 
+			 <li><a href="#">Estonia</a></li> 
+			 <li><a href="#">Fiji</a></li> 
+			 <li><a href="#">Finland</a></li> 
+			 <li><a href="#">Georgia</a></li> 
+			 <li><a href="#">Germany</a></li> 
+			 <li><a href="#">Haiti</a></li> 
+			 <li><a href="#">Iceland</a></li> 
+			 <li><a href="#">India</a></li> 
+			 <li><a href="#">Japan</a></li> 
+			 <li><a href="#">Zimbabwe</a></li> 
+			 <li><a href="#">Vietnam</a></li> 
+			 <li><a href="#">Uruguay</a></li> 
+			 </ul> 
+	
+			 
+<script>
+function myFunction() {
+  
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
