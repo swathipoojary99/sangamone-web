@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Admission Form</title>
+<style>
+
+
+</style>
+<link rel="stylesheet" href="style.css" type="text/css" />
+ <script src="style.js"></script> 
+</head>
+<body>
+
+
+<div id="header" align="center"> XYZ Institute of Technology</div>
+<div class="form-style">
+<h2>PUC Admission Form</h2>
+<form name="form1" method="post" action="#" OnSubmit="return funValidate();" autocomplete="off">
+<table align="center" width="400" border="0">
+<tr>
+<td width="125"> &nbsp;Firstname</td>
+<td><div class="input-group"><input type="text" name="fname" size="20" placeholder="Enter first name"></div>
+ </td>
+ </tr> 
+ <tr>
+<td width="125"> &nbsp;Middle name</td>
+<td><div class="input-group"><input type="text" name="mname" maxlength="50" placeholder="Enter middle name"></div>
+</td>
+</tr>
+<tr>
+<td width="125"> &nbsp;Last name:</td>
+<td><div class="input-group"><input type="text" name="lname" maxlength="50" placeholder="Enter last name"></div>
+</td>
+ </tr>
+<tr>
+<td width="125"> &nbsp; Email Id:</td>
+<td><div class="input-group"><input type="email" name="email" maxlength="100" placeholder="Enter Email id"></div>
+</td>
+ </tr>
+ <tr>
+<td width="125"> &nbsp; Mobile number:</td>
+<td><div class="input-group"><input type="number" name="number" maxlength="100" placeholder="Enter Mobile number"></div>
+</td>
+ </tr>
+ <tr>
+<td> &nbsp;Date of Birth:</td>
+<td><div class="input-group"><input type="date" id="date" ></div>
+</td>
+ </tr>
+ <tr>
+ <td>&nbsp; Gender:</td>
+ <td><span id="gen"><input type="radio" name="gender" value="Male" id="male">
+ Male
+ </td>
+ <td><span id="gen"><input type="radio" name="gender" value="Female" id="female">
+ Female
+ </td>
+ </tr>
+ <tr>
+ <td>&nbsp; Address:</td>
+ <td><div class="input-group"><textarea name="address" cols="17" rows="5"></textarea></div>
+ </td>
+ </tr>
+ <tr>
+<td>&nbsp; Branch:</td>
+<td><span id="bran"><input type="radio" name="Branch" value="Science" id="science">
+Science
+</td>
+<td><span id="bran"><input type="radio" name="Branch" value="Commerce" id="commerce">
+Commerce
+</td>
+<td><span id="bran"><input type="radio" name="Branch" value="Arts" id="arts">
+Arts
+ </td>
+</tr>
+ <tr>
+ <td>&nbsp; Photo</td>
+ <td><div class="input-group"><input type="file" id="myfile" name="myfile"></div>
+ </td>
+ </tr>
+<tr>
+<td>10th percentage/CGPA:</td>
+<td><div class="input-group"><input type="number" name="marks">
+</div>
+</td>
+</tr>
+<tr>
+<td>School name:</td>
+<td><div class="input-group"><select name="school" id="school">
+    <option value="a">SMS English Medium school</option>
+    <option value="b">Nirmala High School</option>
+    <option value="c">Little Rock Indian School</option>
+    <option value="d">GM School </option>
+	<option value="e">Madhav Kripa </option>
+  </select>
+  </div>
+ </td>
+ </tr>
+ <tr>
+ <td>Board/University:</td>
+ <td><div class="input-group"><select name="board" id="board">
+    <option value="a">CBSE</option>
+    <option value="b">ICSE</option>
+    <option value="c">State</option>
+	</select>
+	</div>
+ </td>
+ </tr>
+<tr><td></td><td><input type="submit" name="Submit" value="Submit" class="btn">&nbsp &nbsp
+
+</table>
+</form>
+</div>
+</script>
+ </body>
+
+</html>
